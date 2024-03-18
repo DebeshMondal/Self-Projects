@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<style type="text/css">
+body{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+  background:#3a3838;
+}
+.container{
+   width:150px;
+   height:150px;
+   border:none;
+   display:grid;
+   grid-template-columns:1fr 1fr 1fr;
+   place-items:center;
+}
+.container div{
+   width:15px;
+   height:15px;
+   background:#fff;
+   margin:3px;
+   animation:a 1s linear alternate 
+   infinite;
+}
+.container .abc{
+  animation: delay 1s;
+}
+@keyframes a{
+  0%{
+     width:15px;
+     height:15px;
+     border-radius:0 50% 0 50%;
+  }
+  100%{
+     width:40px;
+     height:40px;
+     background:rgba(43, 239, 8, 0.994);
+     border-radius:50% 0 50% 0;
+  }
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+   <div class="div1"></div>
+   <div class="div2 abc"></div>
+   <div class="div3"></div>
+   <div class="div4 abc"></div>
+   <div class="div5"></div>
+   <div class="div6 abc"></div>
+   <div class="div7"></div>
+   <div class="div8 abc"></div>
+   <div class="div9"></div>
+</div>
+</body>
+</html>

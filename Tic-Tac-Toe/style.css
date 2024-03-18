@@ -1,0 +1,87 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #4CAF50, #2196F3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cell {
+    width: 100%;
+    padding: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    box-sizing: border-box; /* Ensures padding is included in the width */
+}
+
+.cell:hover {
+    background-color: #e0e0e0;
+}
+
+#result-screen {
+    display: none;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#result {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+#restart-btn {
+    background-color: #4CAF50;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#restart-btn:hover {
+    background-color: #45a049;
+}
+
+#player-names {
+    text-align: center;
+}
+
+#start-btn {
+    background-color: #2196F3;
+    color: #ffffff;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#start-btn:hover {
+    background-color: #1565C0;
+    transform: scale(1.05);
+}
